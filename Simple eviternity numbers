@@ -1,0 +1,17 @@
+int solve(int a, int b){
+    int numbers=0;
+  for(int i=a; i<=b; i++)
+    {
+    const std::string tmp=std::to_string(i);
+    const int d3=std::count(tmp.begin(),tmp.end(),'3');
+    const int d5=std::count(tmp.begin(),tmp.end(),'5');
+    const int d8=std::count(tmp.begin(),tmp.end(),'8');
+    
+    if (d3+d5+d8==static_cast<int>(tmp.length()) && d8>=d5 && d5>=d3)
+      {
+      numbers++;
+    }
+    
+  }
+  return numbers;
+}
