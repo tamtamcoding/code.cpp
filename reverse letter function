@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+std::string reverse_letter(const std::string &str)
+{ std::string rev;
+ std::string temp="";
+ for (int i=0;i<str.size();i++){
+   if((str[i]>='a'&& str[i]<='z') || (str[i]>='A' && str[i]<='Z')){
+     temp=temp+str[i];
+   }
+ }
+ rev=std::string(temp.rbegin(),temp.rend());
+    return rev;
+}
