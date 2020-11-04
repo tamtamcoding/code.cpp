@@ -1,0 +1,22 @@
+using namespace std;
+
+int solve(string s){
+ int vovel=0;
+  int consecutive=0;
+  for (int i =0;i<=s.size();i++){
+    if(s[i]=='a'|| s[i]=='o'||s[i]=='i'||s[i]=='e'||s[i]=='u'){
+      vovel++;
+    
+      if(vovel>consecutive){
+        consecutive++;
+    }
+    }
+    
+     else{
+    vovel=0;
+  }
+  
+
+}
+   return consecutive;
+  }
