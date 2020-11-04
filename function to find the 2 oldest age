@@ -1,0 +1,39 @@
+#include <vector>
+
+std::vector<int> two_oldest_ages(std::vector<int> ages)
+{
+  int length=ages.size();
+  sort(ages.begin(), ages.end());
+  return { ages[length-2], ages[length-1]};
+  
+  
+ /* int old;
+  int oldest;
+  if (ages[0]>ages[1])
+    {
+    oldest=ages[0];
+    old=ages[1];
+  }
+  else
+    {
+    oldest=ages[1];
+    old=ages[0];
+  }
+  for (int i=2;i<ages.size();i++){
+    if(ages[i]>oldest)
+      {
+      old=oldest;
+      oldest=ages[i];
+
+    }
+   else if(ages[i]>old && ages[i]!=oldest)
+      {
+      old=ages[i];
+     
+    }
+    
+    
+   
+  }
+    return {old, oldest};*/
+}
