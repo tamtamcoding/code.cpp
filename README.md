@@ -1,0 +1,3 @@
+# code.cpp
+my C++ coding.
+most of these code about solving problem on Codewars...
