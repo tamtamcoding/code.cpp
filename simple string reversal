@@ -1,0 +1,21 @@
+std::string solve(std::string s){
+ int n=s.size();
+   std::string results(n,'\0');
+  for (int i=0;i<n;i++){
+    if(s[i]==' '){
+      results[i]=' ';
+    }
+  }
+  int j=n-1;
+  for (int i=0;i<s.length();i++){
+    if(s[i]!=' '){
+      if(results[j]==' '){
+        j--;
+      }
+      results[j]=s[i];
+      j--;
+    }
+  }
+  return results;
+  
+}
