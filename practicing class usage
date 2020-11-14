@@ -1,0 +1,51 @@
+#include <iostream>
+#include<cstdlib>
+
+using namespace std;
+
+class my_object
+{
+public:
+    void SetI(int iValue);
+    int GetI();
+    
+    void SetF(float fValue);
+    float GetF();
+private:
+    int i;
+    float f;
+};
+
+void my_object::SetI(int iValue) {
+    i = iValue;
+}
+int my_object::GetI() {
+    return (i);
+}
+
+void my_object::SetF(float fValue) {
+    f = fValue;
+}
+
+float my_object::GetF() {
+    return (f);
+}
+
+int main(int argc, char* argb[])
+{
+    my_object anobject, anotherobject;
+
+    anobject.SetI(10);
+    anobject.SetF(3.1425);
+
+    anotherobject.SetI(-10);
+    anotherobject.SetF(0.12235566);
+
+
+    cout << "anObject.i =" << anobject.GetI() << endl;
+    cout << "anObeject.f =" << anobject.GetF() << endl;
+
+    cout << "anotherobject.i" << anotherobject.GetI() << endl;
+    cout << "anotherobject.f =" << anotherobject.GetF() << endl;
+    system("PAUSE");
+    return (EXIT_SUCCESS);
