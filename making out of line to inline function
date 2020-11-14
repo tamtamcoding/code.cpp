@@ -1,0 +1,47 @@
+#include <iostream>
+#include<cstdlib>
+
+using namespace std;
+
+class point {
+public: 
+	point();
+	void SetX(int xValue);
+	int GetX(void);
+	void SetY(int yValue);
+	int GetY(void);
+private:
+	int x, y;
+
+};
+
+inline point::point() {
+	x = y = 0;
+
+}
+inline void point::SetX(int xValue) {
+	x = xValue;
+}
+inline  void point::SetY(int yValue) {
+	y = yValue;
+}
+
+inline int point::GetX(void) {
+	return (x);
+}
+
+inline int point::GetY(void) {
+	return (y);
+}
+
+
+int main(int argc, char* argv[]) {
+	point sini;
+	sini.SetX(30);
+	sini.SetY(40);
+	cout << "The Coordinate (x,y) equal to (" << sini.GetX() << "," << sini.GetY() << ")" << endl;
+
+	sini.SetX(70);
+	sini.SetY(88);
+
+	cout << "The Coordinate (x,y) equal to (" << sini.GetX() << "," << sini.GetY() << ")" << endl;
